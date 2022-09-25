@@ -1,7 +1,7 @@
 import argparse
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Run NGCF.")
+    parser = argparse.ArgumentParser(description="Run HPMR.")
     parser.add_argument('--weights_path', nargs='?', default='',
                         help='Store model path.')
     parser.add_argument('--data_path', nargs='?', default='./Data/',
@@ -29,7 +29,7 @@ def parse_args():
     parser.add_argument('--lr', type=float, default=0.001,   #common parameter
                         help='Learning rate.')
 
-    parser.add_argument('--model_type', nargs='?', default='HPRF',
+    parser.add_argument('--model_type', nargs='?', default='HPMR',
                         help='Specify the name of model (lightgcn,ghcf).') 
     
     parser.add_argument('--adj_type', nargs='?', default='pre',
@@ -52,7 +52,7 @@ def parse_args():
 
     parser.add_argument('--memosize', default=2, type=int, help='memory size')
 
-    # HPRF parameters
+    # HPMR parameters
 
     parser.add_argument('--wid', nargs='?', default='[0.1,0.1,0.1]',
                         help='negative weight, [0.1,0.1,0.1] for beibei, [0.01,0.01,0.01] for taobao')

@@ -12,10 +12,10 @@ def load_data(csv_file):
     tp = pd.read_csv(csv_file, sep='\t')
     return tp
 
-class HPRF(object):
+class HPMR(object):
     def __init__(self, max_item_view, max_item_cart, max_item_buy, max_item_pwc, max_item_pwb, max_item_cwb, data_config):
         # argument settings
-        self.model_type = 'HPRF'
+        self.model_type = 'HPMR'
         self.adj_type = args.adj_type
         self.n_users = data_config['n_users']
         self.n_items = data_config['n_items']
@@ -649,7 +649,7 @@ if __name__ == '__main__':
     
     t0 = time()
 
-    model = HPRF(max_item_view, max_item_cart, max_item_buy, max_item_pwc, max_item_pwb, max_item_cwb, data_config=config)
+    model = HPMR(max_item_view, max_item_cart, max_item_buy, max_item_pwc, max_item_pwb, max_item_cwb, data_config=config)
 
     config = tf.ConfigProto()
     config.gpu_options.allow_growth = True

@@ -1,9 +1,9 @@
-# Hierarchical Projection-based Representation Enhanced Framework for Multi-behavior Recommendation
+# Hierarchical Projection Enhanced Multi-behavior Recommendation
 
 This repository contains TensorFlow codes and datasets for the paper.
 
 ## Environment
-The codes of HPRF are implemented and tested under the following development environment:
+The codes of HPMR are implemented and tested under the following development environment:
 * python=3.7.12
 * tensorflow=1.15.0
 * numpy=1.19.5
@@ -17,11 +17,11 @@ We utilized two datasets to evaluate HPRF: <i>Beibei</i> and <i>Taobao</i>. The 
 
 * Beibei
 ```
-python HPRF.py --gpu_id 6 --gnn_layer 3 --transfer_gnn_layer 1 --encoder gccf --alpha '[0,1,3]' --re_mult 2 
+python HPMR.py --gpu_id 6 --gnn_layer 3 --transfer_gnn_layer 1 --encoder gccf --alpha '[0,1,3]' --re_mult 2 
 ```
 * Taobao
 ```
-python HPRF.py --gpu_id 7 --gnn_layer 4 --transfer_gnn_layer 1 --encoder gccf --alpha '[0,1,3]' --re_mult 2 --dataset Taobao --mess_drop '[0.1]'
+python HPMR.py --gpu_id 7 --gnn_layer 4 --transfer_gnn_layer 1 --encoder gccf --alpha '[0,1,3]' --re_mult 2 --dataset Taobao --mess_drop '[0.1]'
 ```
 
 
