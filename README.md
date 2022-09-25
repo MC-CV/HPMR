@@ -11,7 +11,7 @@ The codes of HPMR are implemented and tested under the following development env
 * tensorflow-determinism=0.3.0
 
 ## Datasets
-We utilized two datasets to evaluate HPRF: <i>Beibei</i> and <i>Taobao</i>. The <i>purchase</i> behavior is taken as the target behavior for all datasets. The last target behavior for the test users are left out to compose the testing set. We filtered out users and items with too few interactions.
+We utilized two datasets to evaluate HPMR: <i>Beibei</i> and <i>Taobao</i>. The <i>purchase</i> behavior is taken as the target behavior for all datasets. The last target behavior for the test users are left out to compose the testing set. We filtered out users and items with too few interactions.
 
 ## How to run
 
