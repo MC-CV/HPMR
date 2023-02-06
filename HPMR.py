@@ -201,6 +201,8 @@ class HPMR(object):
         self.opt = tf.train.AdamOptimizer(learning_rate=self.lr).minimize(self.loss)
 
     def _get_pos_emb(self, ia_embeddings, lable_beh, uid_beh, r):
+        token_embedding = tf.zeros([1, self.emb_dim], name='token_embedding')
+        ia_embeddings = tf.concat([ia_embeddings, token_embedding], axis=0)
         pos_beh = tf.nn.embedding_lookup(ia_embeddings, lable_beh)
         pos_num_beh = tf.cast(tf.not_equal(lable_beh, self.n_items), 'float32')
         pos_beh = tf.einsum('ab,abc->abc', pos_num_beh, pos_beh)
