@@ -24,4 +24,15 @@ python HPMR.py --gpu_id 6 --gnn_layer 3 --transfer_gnn_layer 1 --encoder gccf --
 python HPMR.py --gpu_id 7 --gnn_layer 4 --transfer_gnn_layer 1 --encoder gccf --alpha '[0,1,3]' --re_mult 2 --dataset Taobao --mess_drop '[0.1]'
 ```
 
+## Citation
+If you want to use our codes and datasets in your research, please cite:
+```
+@inproceedings{meng2023hierarchical,
+  title={Hierarchical Projection Enhanced Multi-behavior Recommendation},
+  author={Meng, Chang and Zhang, Hengyu and Guo, Wei and Guo, Huifeng and Liu, Haotian and Zhang, Yingxue and Zheng, Hongkun and Tang, Ruiming and Li, Xiu and Zhang, Rui},
+  booktitle={Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={4649--4660},
+  year={2023}
+}
+```
 
